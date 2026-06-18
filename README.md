@@ -32,3 +32,20 @@ Answer **y** to if you want to install and you're good to go.
 
 - Workspaces are located within the _workspace_ folder of the GOAD install - i.e. `C:\\GOAD\workspace`
 - GOAD configuration file is located at `C:\.goad\goad.ini`
+
+---
+
+## Troubleshooting
+
+> In most case if you get errors during install, don't think. Select the failed instance ̀load <instance_id> and just replay the install with provision_lab to relaunch all or provision_lab_from <playbook> if you know the last failed playbook (most of the errors which could came up are due to windows latency during installation, wait few minutes and replay the install)
+
+```powershell
+GOAD/vmware/local/192.168.56.X > instances
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Instance ID            ┃ Lab  ┃ Provider   ┃ IP Range        ┃ Status                 ┃ Is Default ┃ Extensions ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ 9f1f6f-goad-virtualbox │ GOAD │ virtualbox │ 192.168.56.0/24 │ ready for provisioning │ No         │            │
+└────────────────────────┴──────┴────────────┴─────────────────┴────────────────────────┴────────────┴────────────┘
+GOAD/vmware/local/192.168.56.X > load 9f1f6f-goad-virtualbox
+GOAD/virtualbox/vm/192.168.56.X (9f1f6f-goad-virtualbox) > provision_lab
+```
