@@ -17,7 +17,7 @@ Vagrant will be leveraged to automate the process of vm download and creation.
 
 ## GOAD - Pre-flight Check and Install
 
-```powershell
+```text
 git clone https://github.com/Orange-Cyberdefense/GOAD.git
 cd C:\GOAD														# switch to GOAD folder
 . \.venv\Scripts\Activate.ps1									# activate venv vars
@@ -39,7 +39,7 @@ Answer **y** to if you want to install and you're good to go.
 
 > In most case if you get errors during install, don't think. Select the failed instance ̀load <instance_id> and just replay the install with provision_lab to relaunch all or provision_lab_from <playbook> if you know the last failed playbook (most of the errors which could came up are due to windows latency during installation, wait few minutes and replay the install)
 
-```powershell
+```text
 GOAD/vmware/local/192.168.56.X > instances
 ┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃ Instance ID            ┃ Lab  ┃ Provider   ┃ IP Range        ┃ Status                 ┃ Is Default ┃ Extensions ┃
