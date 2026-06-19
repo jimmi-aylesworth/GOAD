@@ -56,3 +56,5 @@ If you're still having issues with server connections timing out, specifically "
 ansible_winrm_transport=basic
 ansible_port=5985
 ```
+
+After editing the file, you'll need to push the updated file to the provisioning box via `sync_source_jumpbox`.
