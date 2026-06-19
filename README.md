@@ -49,3 +49,10 @@ GOAD/vmware/local/192.168.56.X > instances
 GOAD/vmware/local/192.168.56.X > load 9f1f6f-goad-virtualbox
 GOAD/virtualbox/vm/192.168.56.X (9f1f6f-goad-virtualbox) > provision_lab
 ```
+
+If you're still having issues with server connections timing out, specifically "fatal: [srv02]: UNREACHABLE! => {"changed": false, "msg": "ssl: Server execution failed  (extended fault data: {'transport_message': 'Bad HTTP response returned from server. Code 500', 'http_status_code': 500, 'wsmanfault_code': 2148007941, 'fault_code': 's:Receiver', 'fault_subcode': 'w:InternalError'})", "unreachable": true}", check the `C:\Users\stops\GOAD\ad\GOAD\data\inventory` file and remove the comments on following lines (~35-36)
+
+```text
+ansible_winrm_transport=basic
+ansible_port=5985
+```
