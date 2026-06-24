@@ -11,7 +11,7 @@ tags: [playbook, methodology, htb, goad, oscp, pentest, red-team]
 # 🎯 Standard Operator Playbook
 
 > [!brief] What this is
-> One repeatable methodology for four contexts: **Hack The Box (HTB)**, **Game of Active Directory (GOAD)**, the **OSCP+ exam**, and **general penetration tests (PT)**. The *spine* — the phase-by-phase operator loop — is identical across all four. What changes is the **lane**: scope, OPSEC posture, allowed tooling, proof requirements, time-box, and reporting. Each phase below states the standard action, then calls out where the lanes diverge.
+> One repeatable methodology for four contexts: **Hack The Box (HTB)**, **Game of Active Directory (GOAD)**, the **OSCP+**, and **general penetration tests (PT)**. The *spine* — the phase-by-phase operator loop — is identical across all four. What changes is the **lane**: scope, OPSEC posture, allowed tooling, proof requirements, time-box, and reporting. Each phase below states the standard action, then calls out where the lanes diverge.
 >
 > This document is the connective tissue for the field manual — it ties the individual tool and technique cheat sheets together into a single flow. Where a step needs command-level detail, it points you to the relevant chapter rather than repeating it.
 
